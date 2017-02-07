@@ -1,18 +1,32 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title>Happy Sad</title>
-        
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
+<head>
+    <title>Api Data</title>
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
 <body>
 
+<h1>Flights</h1>
 <div id="data">
 
 </div>
 
-<script src="js/jquery-1.11.0.js"></script>
+<!-- Template using handlebars http://handlebarsjs.com/ -->
+<script id="entry-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="row">
+        <!-- todo: These are the origin and destination codes. Find and retrieve the names from the api. -->
+        {{number}}: {{origin}} - {{destination}}
+    </div>
+    {{/each}}
+</script>
+    
+    <!-- todo: Create a simple form to add flights -->
+
+<script src="Scripts/handlebars.js"></script>
+<script src="Scripts/jquery-3.1.1.js"></script>
 <script src="js/main.js"></script>
 
 </body>
