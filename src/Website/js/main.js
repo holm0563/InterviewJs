@@ -6,7 +6,7 @@
 
     $.get(flightsUrl, function (data) {
 
-        var source = $("#entry-template").html();
+        var source = $('#entry-template').html();
         var template = Handlebars.compile(source);
         var html = template(data);
 
