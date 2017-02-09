@@ -2,3 +2,9 @@
     font-family: sans-serif;
     margin: 20px;
 }
+
+img {
+    border: 1px solid black;
+    margin-top: 50px;
+    padding: 10px 55px;
+}
