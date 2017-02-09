@@ -9,6 +9,22 @@
 <body>
 
 <h1>Flights</h1>
+<div class="header">
+    <div class="row">
+        <div class="td">
+            Flight
+        </div>
+        <div class="td">
+            Origin
+        </div>
+        <div class="td">
+            Destination
+        </div>
+        <div class="td">
+            Departure Time
+        </div>
+    </div>
+</div>
 <div id="data">
 
 </div>
@@ -17,13 +33,28 @@
 <script id="entry-template" type="text/x-handlebars-template">
     {{#each this}}
     <div class="row">
-        <!-- todo: These are the origin and destination codes. Find and retrieve the names from the api. -->
-        {{number}}: {{origin}} - {{destination}}
+        <div class="td">
+            {{number}}:
+        </div>
+        <div class="td">
+            {{origin}}
+        </div>
+        <div class="td">
+            {{destination}} 
+        </div>
+        <div class="td">
+            {{departure}}
+        </div>
     </div>
     {{/each}}
 </script>
-    
-    <!-- todo: Create a simple form to add flights -->
+
+<!-- todo: Format html as shown in image. -->
+   <div style="clear: both;"></div> 
+<img src="todo.png" />
+
+<!-- todo: Create a button to delete a flight -->
+<!-- todo: Replace the station code with the station name -->
 
 <script src="Scripts/handlebars.js"></script>
 <script src="Scripts/jquery-3.1.1.js"></script>

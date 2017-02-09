@@ -2,3 +2,21 @@
     font-family: sans-serif;
     margin: 20px;
 }
+
+.td {
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+.row {
+    clear: both;
+}
+.header {
+    font-weight: bold;
+}
+img {
+    border: 1px solid black;
+    margin-top: 50px;
+    padding: 10px 55px;
+}
