@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-
+<div class="border-box"></div>
 <h1>Flights</h1>
 <div id="data">
 
@@ -15,11 +15,26 @@
 
 <!-- Template using handlebars http://handlebarsjs.com/ -->
 <script id="entry-template" type="text/x-handlebars-template">
-    {{#each this}}
-    <div class="row">
-        {{number}}: {{origin}} - {{destination}}
-    </div>
-    {{/each}}
+    <table>
+        <tr>
+            <th>Flight</th>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+        </tr>
+        {{#each this}}
+        
+
+            <tr>
+             
+                <td>{{number}}:</td>
+                <td>{{origin}} </td>
+                <td>{{destination}}</td>
+            </tr>
+          
+     
+        {{/each}}
+    </table>
 </script>
     
     <!-- todo: Format html as shown in image. -->
